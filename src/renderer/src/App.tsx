@@ -1,14 +1,14 @@
 import { JSX } from 'react/jsx-runtime'
 
-import { Menu, MenuItem, MenuDivider, Classes  } from '@blueprintjs/core'
+import { Menu, MenuItem, MenuDivider, Classes } from '@blueprintjs/core'
 
 function App(): JSX.Element {
-    const handleClick = () => {
+    const handleClick = (): void => {
         console.log('Clicked!')
     }
 
     return (
-        <>  
+        <>
             <div className={Classes.DARK}>
                 <Menu className={Classes.SMALL}>
                     <MenuItem icon="new-text-box" onClick={handleClick} text="New text box" />
